@@ -1,6 +1,4 @@
 import RPi.GPIO as GPIO
 
-#set up GPIO using BCM numbering
-GPIO.setmode(GPIO.BCM)
-#setup GPIO using Board numbering
+#setup GPIO using Board numbering (numbering same as on board)
 GPIO.setmode(GPIO.BOARD)
