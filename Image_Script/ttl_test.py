@@ -1,16 +1,21 @@
-import RPi.GPIO as GPIO
+from periphery import GPIO
 import time
 
-GPIO.setmode(GPIO.BCM)
+GPIO_out = GPIO(0, "out")
 
-GPIO.setup(0, GPIO.OUT)
 
-GPIO.output(0,True) 
+GPIO_out.write(True) 
 time.sleep(5)
-GPIO.output(0,False)
-GPIO.output(0,True) 
+GPIO_out.write(False)
+time.sleep(5) 
+GPIO_out.write(True) 
 time.sleep(5)
-GPIO.output(0,False)
-GPIO.output(0,True) 
+GPIO_out.write(False)
+time.sleep(5) 
+GPIO_out.write(True) 
 time.sleep(5)
-GPIO.output(0,False)
+GPIO_out.write(False)
+time.sleep(5) 
+
+GPIO_out.close()
+
