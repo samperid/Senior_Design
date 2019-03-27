@@ -1,12 +1,17 @@
-import RPi.GPIO as GPIO
+#import RPi.GPIO as GPIO
+from periphery import GPIO
 import time
 
-print("testing script")
-GPIO.setmode(GPIO.BCM)
+gpio_out = GPIO(11, "out")
 
-ttl_pin = 11
-
-GPIO.setup(ttl_pin, GPIO.OUT)
+gpio_out.write(True)
+time.sleep(5)
+gpio_out.write(False)
+time.sleep(5)
+gpio_out.write(True)
+time.sleep(5)
+gpio_out.write(False)
+time.sleep(5)
 
 '''
 GPIO.setup(11, GPIO.OUT)
