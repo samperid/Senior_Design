@@ -3,25 +3,17 @@ import time
 
 print("testing script")
 GPIO.setmode(GPIO.BCM)
-mode = GPIO.getmode()
-print(mode)
-GPIO.setmode(GPIO.BOARD)
-mode = GPIO.getmode()
-print(mode)
-'''
-GPIO.setmode(GPIO.BCM)
 
-GPIO.setup(3, GPIO.OUT)
+GPIO.setup(11, GPIO.OUT)
 
-GPIO.output(0,True) 
+GPIO.output(11,True) 
 time.sleep(5)
-GPIO.output(0,False)
+GPIO.output(11,False)
 time.sleep(5)
-GPIO.output(0,True) 
+GPIO.output(11,True) 
 time.sleep(5)
-GPIO.output(0,False)
+GPIO.output(11,False)
 time.sleep(5)
-GPIO.output(0,True) 
+GPIO.output(11,True) 
 time.sleep(5)
-GPIO.output(0,False)
-'''
+GPIO.output(11,False)
