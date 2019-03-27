@@ -1,6 +1,8 @@
 import RPi.GPIO as GPIO
 import time
 
+GPIO.setup(0,GPIO.OUT)
+
 '''
 GPIO.setup(11, GPIO.OUT)
 
