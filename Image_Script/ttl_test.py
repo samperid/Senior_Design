@@ -5,6 +5,9 @@ print("testing script")
 GPIO.setmode(GPIO.BCM)
 mode = GPIO.getmode()
 print(mode)
+GPIO.setmode(GPIO.BOARD)
+mode = GPIO.getmode()
+print(mode)
 '''
 GPIO.setmode(GPIO.BCM)
 
