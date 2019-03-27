@@ -2,6 +2,7 @@ import RPi.GPIO as GPIO
 import time
 
 print("testing script")
+GPIO.setmode(GPIO.BCM)
 mode = GPIO.getmode()
 print(mode)
 '''
