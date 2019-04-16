@@ -4,9 +4,9 @@ import time
 GPIO.setmode(GPIO.BCM)
 
 #GPIO.setup(18,GPIO.OUT)
-GPIO.setup(24,GPIO.OUT)
-GPIO.output(24, GPIO.HIGH)
-time.sleep(3)
+GPIO.setup(432,GPIO.OUT)
+#GPIO.output(24, GPIO.HIGH)
+#time.sleep(3)
 
 '''
 GPIO.output(18, GPIO.LOW)
