@@ -9,7 +9,8 @@ while test == True:
     print("Enter 0 to exit program")
     file_name = input("Enter filename you want to analyze: ")
     if file_name != '0':
-        file_string = '../Images/' + file_name + '.jpg'
+        #file_string = '../Images/' + file_name + '.jpg'
+        file_string = '../Images/' + file_name + '.png'
         #Reading in Image from Directory
         img = cv2.imread(file_string,0)
         img = cv2.transpose(img)
@@ -27,7 +28,7 @@ while test == True:
         for i in range(0,width):
             for j in range(0,height):
                 intensity[i,j] = img[i,j]
-                worksheet.write(i,j,intensity[i,j])   
+                worksheet.write(i,j,intensity[i,j]) 
 
         print(intensity)
         workbook.close()
