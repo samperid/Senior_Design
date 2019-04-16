@@ -26,8 +26,8 @@ print(width)
 print(height)
 intensity = np.empty([width,height])
 #Iterate through pixels and store intensity and write information to excel sheet
-for i in range(1,width-1):
-    for j in range(1,height-1):
+for i in range(10,width-10):
+    for j in range(10,height-10):
         if img[i,j] > 10 and img[i,j] < 50:
             #Right Corner
             if img[i+10,j] > 50 and img[i,j-10] > 50 and img[i,j+10] > 50 and j != height-1:
