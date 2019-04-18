@@ -1,6 +1,6 @@
 import RPi.GPIO as GPIO
 import time
-#hello
+
 GPIO.setmode(GPIO.BCM)
 
 #GPIO.setup(18,GPIO.OUT)
