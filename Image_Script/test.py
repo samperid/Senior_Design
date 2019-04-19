@@ -20,8 +20,13 @@ cam.TriggerSelector.SetValue("FrameBurstStart")
 cam.TriggerSource.SetValue("Software")
 cam.TriggerMode.SetValue("On")
 
+#Can use StartGrabbing()/StopGrabbing() method to switch on/off triggering execution
 cam.StartGrabbing()
-#cam.TriggerSoftware.Execute()
+cam.TriggerSoftware.Execute()
+cam.StopGrabbing()
+
+cam.StartGrabbing()
+cam.TriggerSoftware.Execute()
 with cam.RetrieveResult(2000) as result:
 	
     # Calling AttachGrabResultBuffer creates another reference to the
