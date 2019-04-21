@@ -21,6 +21,7 @@ acquire_img("410")
 GPIO.output(27,GPIO.LOW)
 time.sleep(1)
 
+'''
 print("Turn on 730nm LED")
 GPIO.output(28,GPIO.HIGH)
 time.sleep(1)
@@ -29,6 +30,7 @@ print("Acquiring 730nm Image")
 acquire_img("730")
 GPIO.output(28,GPIO.LOW)
 time.sleep(1)
+'''
 
 #crop_img(file_name)
 #analyze_img("patientTest_410")
