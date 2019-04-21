@@ -4,7 +4,7 @@ import xlsxwriter
 
 def analyze_img(file):
     file_name = file
-    file_string = '../Images/' + file_name + '.png'
+    file_string = '../../Images/' + file_name + '.png'
     #Reading in Image from Directory
     img = cv2.imread(file_string,0)
     img = cv2.transpose(img)
@@ -26,3 +26,4 @@ def analyze_img(file):
 
     print(intensity)
     workbook.close()
+    #return intensity

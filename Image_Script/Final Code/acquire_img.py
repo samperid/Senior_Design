@@ -3,7 +3,7 @@ import platform
 
 def acquire_img(wavelength):
     #Define camera values 
-    path = "../Images/"
+    path = "../../Images/"
     img = pylon.PylonImage()
     tlf = pylon.TlFactory.GetInstance()
     cam = pylon.InstantCamera(tlf.CreateFirstDevice())
@@ -24,7 +24,7 @@ def acquire_img(wavelength):
         # Calling AttachGrabResultBuffer creates another reference to the
         # grab result buffer. This prevents the buffer's reuse for grabbing.
         img.AttachGrabResultBuffer(result)
-        filename = "patientTest_%d.png" % wavelength
+        filename = "patientTest_%s.png" % wavelength
         img.Save(pylon.ImageFileFormat_Png, path+filename)
 
         # In order to make it possible to reuse the grab result for grabbing
