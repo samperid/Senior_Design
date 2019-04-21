@@ -10,6 +10,8 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 GPIO.setup(27,GPIO.OUT)
 GPIO.setup(28,GPIO.OUT)
+GPIO.output(27,GPIO.LOW)
+GPIO.output(28,GPIO.LOW)
 time.sleep(1)
 
 print("Turn on 410nm LED")
