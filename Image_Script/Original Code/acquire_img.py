@@ -11,7 +11,7 @@ Available image formats are     (depending on platform):
 from pypylon import pylon
 import platform
 
-path = "../Images/"
+path = "../../Images/"
 num_img_to_save = 2
 img = pylon.PylonImage()
 tlf = pylon.TlFactory.GetInstance()
