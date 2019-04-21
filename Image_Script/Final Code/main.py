@@ -9,14 +9,26 @@ import time
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 GPIO.setup(27,GPIO.OUT)
+GPIO.setup(28,GPIO.OUT)
 time.sleep(1)
 
-print("Turn on LED")
+print("Turn on 410nm LED")
 GPIO.output(27,GPIO.HIGH)
 time.sleep(1)
 
-print("Acquiring Image")
+print("Acquiring 410nm Image")
 acquire_img("410")
 GPIO.output(27,GPIO.LOW)
+time.sleep(1)
+
+print("Turn on 730nm LED")
+GPIO.output(28,GPIO.HIGH)
+time.sleep(1)
+
+print("Acquiring 730nm Image")
+acquire_img("730")
+GPIO.output(28,GPIO.LOW)
+time.sleep(1)
+
 #crop_img(file_name)
 #analyze_img("patientTest_410")
