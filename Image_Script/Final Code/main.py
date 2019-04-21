@@ -17,6 +17,6 @@ time.sleep(1)
 
 print("Acquiring Image")
 acquire_img("410")
-
+GPIO.output(27,GPIO.LOW)
 #crop_img(file_name)
 #analyze_img("patientTest_410")
