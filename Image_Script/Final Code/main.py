@@ -9,9 +9,9 @@ import time
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 GPIO.setup(27,GPIO.OUT)
-GPIO.setup(28,GPIO.OUT)
+GPIO.setup(22,GPIO.OUT)
 GPIO.output(27,GPIO.LOW)
-GPIO.output(28,GPIO.LOW)
+GPIO.output(22,GPIO.LOW)
 time.sleep(1)
 
 print("Turn on 410nm LED")
@@ -25,12 +25,12 @@ time.sleep(1)
 
 
 print("Turn on 730nm LED")
-GPIO.output(28,GPIO.HIGH)
+GPIO.output(22,GPIO.HIGH)
 time.sleep(1)
 
 print("Acquiring 730nm Image")
 acquire_img("730")
-GPIO.output(28,GPIO.LOW)
+GPIO.output(22,GPIO.LOW)
 time.sleep(1)
 
 #crop_img(file_name)
