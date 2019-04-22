@@ -18,9 +18,9 @@ title.config(font=("Arial", 36, "italic"))
 title.place(relx=0.23, rely=0.2)
 
 # Button to start acquisition
-start = Button(text="Start Imaging", command=labelAppear)
+start = Button(root, text="Start Imaging", command=labelAppear)
 start.config(font=("Arial", 20, "bold"))
-start.place(height=100, width=200, relx=0.3, rely=0.65)
+start.place(relx=0.3, rely=0.65)
 
 # Enter text for patient's name
 enter = Entry()
