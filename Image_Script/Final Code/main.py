@@ -5,33 +5,35 @@ import RPi.GPIO as GPIO
 import time
 
 #Main file which executes separate functions 
+def main():
+	#Assign GPIO information
+	GPIO.setmode(GPIO.BCM)
+	GPIO.setwarnings(False)
+	GPIO.setup(27,GPIO.OUT)
+	GPIO.setup(22,GPIO.OUT)
+	GPIO.output(27,GPIO.LOW)
+	GPIO.output(22,GPIO.LOW)
+	time.sleep(1)
 
-GPIO.setmode(GPIO.BCM)
-GPIO.setwarnings(False)
-GPIO.setup(27,GPIO.OUT)
-GPIO.setup(22,GPIO.OUT)
-GPIO.output(27,GPIO.LOW)
-GPIO.output(22,GPIO.LOW)
-time.sleep(1)
+	#Acquire each individual image per wavelength 
+	print("Turn on 410nm LED")
+	GPIO.output(27,GPIO.HIGH)
+	time.sleep(1)
 
-print("Turn on 410nm LED")
-GPIO.output(27,GPIO.HIGH)
-time.sleep(1)
-
-print("Acquiring 410nm Image")
-acquire_img("410")
-GPIO.output(27,GPIO.LOW)
-time.sleep(1)
+	print("Acquiring 410nm Image")
+	acquire_img("410")
+	GPIO.output(27,GPIO.LOW)
+	time.sleep(1)
 
 
-print("Turn on 730nm LED")
-GPIO.output(22,GPIO.HIGH)
-time.sleep(1)
+	print("Turn on 730nm LED")
+	GPIO.output(22,GPIO.HIGH)
+	time.sleep(1)
 
-print("Acquiring 730nm Image")
-acquire_img("730")
-GPIO.output(22,GPIO.LOW)
-time.sleep(1)
+	print("Acquiring 730nm Image")
+	acquire_img("730")
+	GPIO.output(22,GPIO.LOW)
+	time.sleep(1)
 
-#crop_img(file_name)
-#analyze_img("patientTest_410")
+	#crop_img(file_name)
+	#analyze_img("patientTest_410")
