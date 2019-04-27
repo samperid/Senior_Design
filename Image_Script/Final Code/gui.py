@@ -12,7 +12,7 @@ def index():
 @app.route("/result",methods=['GET','POST'])
 def image():
 	name = flask.session.get('name')
-	return flask.render_template('result.html')
+	return flask.render_template('result.html',**locals())
 
 if __name__ == "__main__":
     app.run(debug=True)
