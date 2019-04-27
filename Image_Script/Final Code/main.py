@@ -5,7 +5,7 @@ import RPi.GPIO as GPIO
 import time
 
 #Main file which executes separate functions 
-def main():
+def main(name):
 	#Assign GPIO information
 	GPIO.setmode(GPIO.BCM)
 	GPIO.setwarnings(False)
@@ -21,19 +21,20 @@ def main():
 	time.sleep(1)
 
 	print("Acquiring 410nm Image")
-	acquire_img("410")
+	file_name = name+"_410"
+	acquire_img(file_name)
 	GPIO.output(27,GPIO.LOW)
 	time.sleep(1)
 
 
-	print("Turn on 730nm LED")
-	GPIO.output(22,GPIO.HIGH)
-	time.sleep(1)
+	# print("Turn on 730nm LED")
+	# GPIO.output(22,GPIO.HIGH)
+	# time.sleep(1)
 
-	print("Acquiring 730nm Image")
-	acquire_img("730")
-	GPIO.output(22,GPIO.LOW)
-	time.sleep(1)
+	# print("Acquiring 730nm Image")
+	# acquire_img("730")
+	# GPIO.output(22,GPIO.LOW)
+	# time.sleep(1)
 
 	#crop_img(file_name)
 	#analyze_img("patientTest_410")

@@ -1,7 +1,7 @@
 from pypylon import pylon
 import platform
 
-def acquire_img(wavelength):
+def acquire_img(img_name):
     #Define camera values 
     path = "../../Images/"
     img = pylon.PylonImage()
@@ -24,7 +24,7 @@ def acquire_img(wavelength):
         # Calling AttachGrabResultBuffer creates another reference to the
         # grab result buffer. This prevents the buffer's reuse for grabbing.
         img.AttachGrabResultBuffer(result)
-        filename = "patientTest_%s.png" % wavelength
+        filename = "%s.png" % img_name
         img.Save(pylon.ImageFileFormat_Png, path+filename)
 
         # In order to make it possible to reuse the grab result for grabbing
