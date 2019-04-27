@@ -1,21 +1,15 @@
-from flask import Flask
-app = Flask(__name__)
+import flask
+app = flask.Flask(__name__)
 
-@app.route("/")
+@app.route("/",methods=['GET','POST'])
 def index():
-    return "Index!"
+	name = flask.request.form.get('name')
+	#run main with name from user
+    return flask.render_template('index.html',**locals())
 
-@app.route("/hello")
-def hello():
-    return "Hello World!"
-
-@app.route("/members")
-def members():
-    return "Members"
-
-@app.route("/members/<string:name>/")
-def getMember(name):
-    return name</string:name>
+@app.route("/result",methods=['GET','POST'])
+def image():
+    return flask.render_template('result.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
