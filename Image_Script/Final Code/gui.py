@@ -11,6 +11,7 @@ def index():
 def image():
 	name = flask.request.form.get('name')
 	flask.session['name'] = name
+	test = "string"
 	return flask.render_template('result.html',**locals())
 
 if __name__ == "__main__":
