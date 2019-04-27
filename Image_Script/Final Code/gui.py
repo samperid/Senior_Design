@@ -11,7 +11,7 @@ def index():
 @app.route("/result",methods=['GET','POST'])
 def image():
 	name = flask.session.get('name')
-    return flask.render_template('result.html')
+	return flask.render_template('result.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
