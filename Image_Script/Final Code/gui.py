@@ -4,11 +4,13 @@ app = flask.Flask(__name__)
 @app.route("/",methods=['GET','POST'])
 def index():
 	name = flask.request.form.get('name')
+	flask.session['name'] = name
 	#run main with name from user
 	return flask.render_template('index.html',**locals())
 
 @app.route("/result",methods=['GET','POST'])
 def image():
+	name = flask.session.get('name')
     return flask.render_template('result.html')
 
 if __name__ == "__main__":
