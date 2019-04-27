@@ -1,42 +1,65 @@
-from Tkinter import *
-import time
-from test2 import test
+from flask import Flask
+app = Flask(__name__)
 
-#Main window / sizing main window
-root = Tk()
-root.geometry("800x480")
+@app.route("/")
+def index():
+    return "Index!"
+
+@app.route("/hello")
+def hello():
+    return "Hello World!"
+
+@app.route("/members")
+def members():
+    return "Members"
+
+@app.route("/members/<string:name>/")
+def getMember(name):
+    return name</string:name>
+
+if __name__ == "__main__":
+    app.run(debug=True)
 
 
-# Function
-def labelAppear():
-	text_var = "imaging...."
-	imaging = Label(text=text_var)
-	imaging.config(font=("Arial",24,"bold"))
-	imaging.place(relx=0.37, rely=0.9)
-	#imaging.pack()
-	test()
+# from Tkinter import *
+# import time
+# from test2 import test
+
+# #Main window / sizing main window
+# root = Tk()
+# root.geometry("800x480")
 
 
-# Title label
-title = Label(root, text="LESION CHECK",anchor=CENTER)
-title.config(font=("Arial", 36, "italic","underline"))
-title.place(relx=0.3, rely=0.2)
+# # Function
+# def labelAppear():
+# 	text_var = "imaging...."
+# 	imaging = Label(text=text_var)
+# 	imaging.config(font=("Arial",24,"bold"))
+# 	imaging.place(relx=0.37, rely=0.9)
+# 	#imaging.pack()
+# 	test()
 
-# Label for text box
-label_enter = Label(root, text="Enter Patient's Name")
-label_enter.config(font=("Arial", 16,"bold"))
-label_enter.place(relx=0.39, rely = 0.45)
 
-# Enter text for patient's name
-enter = Entry()
-enter.place(relx=0.36, rely=0.5)
+# # Title label
+# title = Label(root, text="LESION CHECK",anchor=CENTER)
+# title.config(font=("Arial", 36, "italic","underline"))
+# title.place(relx=0.3, rely=0.2)
 
-# Button to start acquisition
-start = Button(text="Start Imaging", command=labelAppear)
-start.config(font=("Arial", 20, "bold"))
-start.place(height=100, width=200, relx=0.35, rely=0.65)
+# # Label for text box
+# label_enter = Label(root, text="Enter Patient's Name")
+# label_enter.config(font=("Arial", 16,"bold"))
+# label_enter.place(relx=0.39, rely = 0.45)
 
-root.mainloop()
+# # Enter text for patient's name
+# enter = Entry()
+# enter.place(relx=0.36, rely=0.5)
+
+# # Button to start acquisition
+# start = Button(text="Start Imaging", command=labelAppear)
+# start.config(font=("Arial", 20, "bold"))
+# start.place(height=100, width=200, relx=0.35, rely=0.65)
+
+# root.mainloop()
 
 # class buddy:
 
