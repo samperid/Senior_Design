@@ -5,7 +5,7 @@ app = flask.Flask(__name__)
 def index():
 	name = flask.request.form.get('name')
 	#run main with name from user
-    return flask.render_template('index.html',**locals())
+	return flask.render_template('index.html',**locals())
 
 @app.route("/result",methods=['GET','POST'])
 def image():
