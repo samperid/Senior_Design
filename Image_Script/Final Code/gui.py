@@ -1,6 +1,5 @@
 import flask
 app = flask.Flask(__name__)
-SECRET_KEY = 'LETAPAHER'
 
 @app.route("/",methods=['GET','POST'])
 def index():
