@@ -1,6 +1,6 @@
 from Tkinter import *
 import time
-#from main import main
+from test2 import test
 
 #Main window / sizing main window
 root = Tk()
@@ -14,6 +14,7 @@ def labelAppear():
 	imaging.config(font=("Arial",24,"bold"))
 	imaging.place(relx=0.37, rely=0.9)
 	#imaging.pack()
+	test()
 
 
 # Title label
@@ -21,19 +22,19 @@ title = Label(root, text="LESION CHECK",anchor=CENTER)
 title.config(font=("Arial", 36, "italic","underline"))
 title.place(relx=0.3, rely=0.2)
 
-# Button to start acquisition
-start = Button(text="Start Imaging", command=labelAppear)
-start.config(font=("Arial", 20, "bold"))
-start.place(height=100, width=200, relx=0.3, rely=0.65)
-
-# Enter text for patient's name
-enter = Entry()
-enter.place(relx=0.3, rely=0.5)
-
 # Label for text box
 label_enter = Label(root, text="Enter Patient's Name")
 label_enter.config(font=("Arial", 16,"bold"))
-label_enter.place(relx=0.33, rely = 0.45)
+label_enter.place(relx=0.39, rely = 0.45)
+
+# Enter text for patient's name
+enter = Entry()
+enter.place(relx=0.36, rely=0.5)
+
+# Button to start acquisition
+start = Button(text="Start Imaging", command=labelAppear)
+start.config(font=("Arial", 20, "bold"))
+start.place(height=100, width=200, relx=0.35, rely=0.65)
 
 root.mainloop()
 
