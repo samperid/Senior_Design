@@ -14,9 +14,9 @@ def image():
 	flask.session['name'] = name
 	test = "string"
 	#main(name)
-	wavelengths = [410,490,625,730,808,940]
+	wavelengths = [410,490,565,625,730,808]
 	img_names = []
-	for i in range(0,5):
+	for i in range(0,6):
 		wavelength = str(wavelengths[i])
 		img_names.append(name+"_"+wavelength)
 
@@ -29,12 +29,12 @@ def image():
 	# img3 = path+img_names[3]
 	# img4 = path+img_names[4]
 	# img5 = path+img_names[5]
-	img0 = path+"triangle_shift.jpg"
-	img1 = path+"triangle_norm.jpg"
-	img2 = path+"square_shift.jpg"
-	img3 = path+"square_norm.jpg"
-	img4 = path+"circle_shift.jpg"
-	img5 = path+"circle_norm.jpg"
+	img0 = path+"mnpdouble_410_401.jpg"
+	img1 = path+"mnpdouble_490_401.jpg"
+	img2 = path+"mnpdouble_625_401.jpg"
+	img3 = path+"mnpdouble_730_401.jpg"
+	img4 = path+"mnpdouble_808_401.jpg"
+	img5 = path+"mnpdouble_940_401.jpg"
 
 	return flask.render_template('result.html',**locals())
 

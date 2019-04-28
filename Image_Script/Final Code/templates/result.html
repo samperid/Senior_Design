@@ -1,26 +1,45 @@
-<h1 style="text-align: center;font-family:arial,sans-serif;">Displaying images taken for {{name}}</h1>
-<br>
-<p>
-<table>
-	<tr>
-		<th style="font-size:20;">img0</th>
-		<th>img1</th>
-		<th>img0</th>
-	</tr>
-	<tr>
-		<td style="text-align:center;"><img src={{img0}} alt="patient_img" width="100%"></img></td>
-		<td style="text-align:center;"><img src={{img1}} alt="patient_img" width="100%"></img></td>
-		<td style="text-align:center;"><img src={{img2}} alt="patient_img" width="100%"></img></td>
-	</tr>
-	<tr>
-		<th>img3</th>
-		<th>img4</th>
-		<th>img5</th>
-	</tr>
-	<tr>
-		<td style="text-align:center;"><img src={{img3}} alt="patient_img" width="100%"></img></td>
-		<td style="text-align:center;"><img src={{img4}} alt="patient_img" width="100%"></img></td>
-		<td style="text-align:center;"><img src={{img5}} alt="patient_img" width="100%"></img></td>
-	</tr>
-</table>
-</p>
+<head>
+<style type="text/css">
+	tr{
+		font-size:20;
+	}
+	th{
+		font-family:arial,sans-serif;
+	}
+	td{
+		text-align:center;
+	}
+</style>
+</head>
+
+<body>
+	<h1 style="text-align: center;font-family:arial,sans-serif;">Displaying images taken for {{name}}</h1>
+	<br>
+	<p>
+		<table style="margin-left:auto;margin-right:auto;">
+			<tr>
+				<th>{{img_names[0]}}</th>
+				<th>{{img_names[1]}}</th>
+				<th>{{img_names[2]}}</th>
+			</tr>
+			<tr>
+				<td><img src={{img0}} alt="patient_img" width="100%"></img></td>
+				<td><img src={{img1}} alt="patient_img" width="100%"></img></td>
+				<td><img src={{img2}} alt="patient_img" width="100%"></img></td>
+			</tr>
+			<tr>
+				<th>{{img_names[3]}}</th>
+				<th>{{img_names[4]}}</th>
+				<th>{{img_names[5]}}</th>
+			</tr>
+			<tr>
+				<td><img src={{img3}} alt="patient_img" width="100%"></img></td>
+				<td><img src={{img4}} alt="patient_img" width="100%"></img></td>
+				<td><img src={{img5}} alt="patient_img" width="100%"></img></td>
+			</tr>
+		</table>
+	</p>
+	<form action="/" method=post style="text-align: center;">
+	<input type="submit" value="Return to Previous Page">
+	</form>
+</body>
