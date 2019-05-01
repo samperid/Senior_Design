@@ -1,5 +1,5 @@
 import flask
-#from main import main
+from main import main
 
 app = flask.Flask(__name__)
 app.secret_key = "super secret key"
