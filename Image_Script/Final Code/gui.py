@@ -17,7 +17,7 @@ def image():
 	main(name)
 	wavelengths = [410,490,565,625,730,808,940]
 	img_names = []
-	for i in range(0,6):
+	for i in range(0,7):
 		wavelength = str(wavelengths[i])
 		img_names.append(name+"_"+wavelength)
 
