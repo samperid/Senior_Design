@@ -3,7 +3,8 @@ import platform
 
 def acquire_img(img_name):
     #Define camera values 
-    path = "../../Images/"
+    #path = "../../Images/"
+    path = "static/"
     img = pylon.PylonImage()
     tlf = pylon.TlFactory.GetInstance()
     cam = pylon.InstantCamera(tlf.CreateFirstDevice())
