@@ -25,8 +25,7 @@ def acquire_img(img_name):
         # grab result buffer. This prevents the buffer's reuse for grabbing.
         img.AttachGrabResultBuffer(result)
         filename = "%s.png" % img_name
-        name = path+filename
-        img.Save(pylon.ImageFileFormat_Png, name)
+        img.Save(pylon.ImageFileFormat_Png, (path+filename))
 
         # In order to make it possible to reuse the grab result for grabbing
         # again, we have to release the image (effectively emptying the

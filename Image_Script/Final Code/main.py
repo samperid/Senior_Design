@@ -40,7 +40,7 @@ def main(name):
 
 	print("Acquiring 410nm Image")
 	file_name = name+"_410"
-	acquire_img(file_name)
+	#acquire_img(file_name)
 	GPIO.output(4,GPIO.LOW)
 	time.sleep(1)
 
@@ -50,7 +50,7 @@ def main(name):
 
 	print("Acquiring 490nm Image")
 	file_name = name+"_490"
-	acquire_img(file_name)
+	#acquire_img(file_name)
 	GPIO.output(27,GPIO.LOW)
 	time.sleep(1)
 
@@ -60,7 +60,7 @@ def main(name):
 
 	print("Acquiring 565nm Image")
 	file_name = name+"_565"
-	acquire_img(file_name)
+	#acquire_img(file_name)
 	GPIO.output(22,GPIO.LOW)
 	time.sleep(1)
 
@@ -70,7 +70,7 @@ def main(name):
 
 	print("Acquiring 625nm Image")
 	file_name = name+"_625"
-	acquire_img(file_name)
+	#acquire_img(file_name)
 	GPIO.output(24,GPIO.LOW)
 	time.sleep(1)
 
@@ -80,7 +80,7 @@ def main(name):
 
 	print("Acquiring 730nm Image")
 	file_name = name+"_730"
-	acquire_img(file_name)
+	#acquire_img(file_name)
 	GPIO.output(25,GPIO.LOW)
 	time.sleep(1)
 
@@ -90,7 +90,7 @@ def main(name):
 
 	print("Acquiring 808nm Image")
 	file_name = name+"_808"
-	acquire_img(file_name)
+	#acquire_img(file_name)
 	GPIO.output(5,GPIO.LOW)
 	time.sleep(1)
 
