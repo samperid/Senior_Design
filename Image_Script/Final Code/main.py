@@ -60,17 +60,17 @@ def main(name):
 	# time.sleep(0.5)
 	time.sleep(1)
 
-	print("Turn on 565nm LED")
-	GPIO.output(22,GPIO.HIGH)
-	# time.sleep(0.5)
-	time.sleep(1)
+	# print("Turn on 565nm LED")
+	# GPIO.output(22,GPIO.HIGH)
+	# # time.sleep(0.5)
+	# time.sleep(1)
 
-	print("Acquiring 565nm Image")
-	file_name = name+"_565"
-	acquire_img(file_name)
-	GPIO.output(22,GPIO.LOW)
+	# print("Acquiring 565nm Image")
+	# file_name = name+"_565"
+	# acquire_img(file_name)
+	# GPIO.output(22,GPIO.LOW)
+	# # time.sleep(0.5)
 	# time.sleep(0.5)
-	time.sleep(0.5)
 
 	print("Turn on 625nm LED")
 	GPIO.output(24,GPIO.HIGH)
@@ -108,17 +108,17 @@ def main(name):
 	# time.sleep(0.5)
 	time.sleep(1)
 
-	print("Turn on 940nm LED")
-	GPIO.output(6,GPIO.HIGH)
-	# time.sleep(0.5)
-	time.sleep(1)
+	# print("Turn on 940nm LED")
+	# GPIO.output(6,GPIO.HIGH)
+	# # time.sleep(0.5)
+	# time.sleep(1)
 
-	print("Acquiring 940nm Image")
-	file_name = name+"_940"
-	acquire_img(file_name)
-	GPIO.output(6,GPIO.LOW)
-	# time.sleep(0.5)
-	time.sleep(1)
+	# print("Acquiring 940nm Image")
+	# file_name = name+"_940"
+	# acquire_img(file_name)
+	# GPIO.output(6,GPIO.LOW)
+	# # time.sleep(0.5)
+	# time.sleep(1)
 
 	#crop_img(file_name)
 	#analyze_img("patientTest_410")
