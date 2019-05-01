@@ -23,7 +23,7 @@ def image():
 
 	print(img_names)
 	#Need to send img files from static folder
-	path = "/static/"
+	path = "static/"
 	img0 = path+img_names[0]
 	img1 = path+img_names[1]
 	img2 = path+img_names[2]
