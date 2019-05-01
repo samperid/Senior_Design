@@ -24,12 +24,12 @@ def image():
 	print(img_names)
 	#Need to send img files from static folder
 	path = "static/"
-	img0 = path+img_names[0]
-	img1 = path+img_names[1]
-	img2 = path+img_names[2]
-	img3 = path+img_names[3]
-	img4 = path+img_names[4]
-	img5 = path+img_names[5]
+	img0 = path+img_names[0]+".png"
+	img1 = path+img_names[1]+".png"
+	img2 = path+img_names[2]+".png"
+	img3 = path+img_names[3]+".png"
+	img4 = path+img_names[4]+".png"
+	img5 = path+img_names[5]+".png"
 	# img0 = path+"mnpdouble_410_401.jpg"
 	# img1 = path+"mnpdouble_490_401.jpg"
 	# img2 = path+"mnpdouble_625_401.jpg"
