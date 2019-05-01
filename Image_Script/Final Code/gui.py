@@ -22,20 +22,20 @@ def image():
 		img_names.append(name+"_"+wavelength)
 
 	print(img_names)
-	#Need to save files in static folder
-	path = "../static/"
-	# img0 = path+img_names[0]
-	# img1 = path+img_names[1]
-	# img2 = path+img_names[2]
-	# img3 = path+img_names[3]
-	# img4 = path+img_names[4]
-	# img5 = path+img_names[5]
-	img0 = path+"mnpdouble_410_401.jpg"
-	img1 = path+"mnpdouble_490_401.jpg"
-	img2 = path+"mnpdouble_625_401.jpg"
-	img3 = path+"mnpdouble_730_401.jpg"
-	img4 = path+"mnpdouble_808_401.jpg"
-	img5 = path+"mnpdouble_940_401.jpg"
+	#Need to send img files from static folder
+	path = "/static/"
+	img0 = path+img_names[0]
+	img1 = path+img_names[1]
+	img2 = path+img_names[2]
+	img3 = path+img_names[3]
+	img4 = path+img_names[4]
+	img5 = path+img_names[5]
+	# img0 = path+"mnpdouble_410_401.jpg"
+	# img1 = path+"mnpdouble_490_401.jpg"
+	# img2 = path+"mnpdouble_625_401.jpg"
+	# img3 = path+"mnpdouble_730_401.jpg"
+	# img4 = path+"mnpdouble_808_401.jpg"
+	# img5 = path+"mnpdouble_940_401.jpg"
 
 	return flask.render_template('result.html',**locals())
 
