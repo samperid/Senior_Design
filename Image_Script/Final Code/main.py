@@ -110,7 +110,7 @@ def main(name):
 
 	print("Turn on 940nm LED")
 	GPIO.output(6,GPIO.HIGH)
-1time.sleep(0.5)
+	# time.sleep(0.5)
 	time.sleep(1)
 
 	print("Acquiring 940nm Image")
