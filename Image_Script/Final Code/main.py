@@ -32,68 +32,93 @@ def main(name):
 	GPIO.output(25,GPIO.LOW)
 	GPIO.output(5,GPIO.LOW)
 	GPIO.output(6,GPIO.LOW)
-	time.sleep(1)
+	time.sleep(0.5)
+	#time.sleep(0.5)
 
 	#Acquire each individual image per wavelength 
 	print("Turn on 410nm LED")
 	GPIO.output(4,GPIO.HIGH)
-	time.sleep(1)
+	time.sleep(0.5)
+	#time.sleep(0.5)
 
 	print("Acquiring 410nm Image")
 	file_name = name+"_410"
 	acquire_img(file_name)
 	GPIO.output(4,GPIO.LOW)
-	time.sleep(1)
+	time.sleep(0.5)
+	#time.sleep(0.5)
 
 	print("Turn on 490nm LED")
 	GPIO.output(27,GPIO.HIGH)
-	time.sleep(1)
+	time.sleep(0.5)
+	#time.sleep(0.5)
 
 	print("Acquiring 490nm Image")
 	file_name = name+"_490"
 	acquire_img(file_name)
 	GPIO.output(27,GPIO.LOW)
-	time.sleep(1)
+	time.sleep(0.5)
+	#time.sleep(0.5)
 
 	print("Turn on 565nm LED")
 	GPIO.output(22,GPIO.HIGH)
-	time.sleep(1)
+	time.sleep(0.5)
+	#time.sleep(0.5)
 
 	print("Acquiring 565nm Image")
 	file_name = name+"_565"
 	acquire_img(file_name)
 	GPIO.output(22,GPIO.LOW)
-	time.sleep(1)
+	time.sleep(0.5)
+	#time.sleep(0.5)
 
 	print("Turn on 625nm LED")
 	GPIO.output(24,GPIO.HIGH)
-	time.sleep(1)
+	time.sleep(0.5)
+	#time.sleep(0.5)
 
 	print("Acquiring 625nm Image")
 	file_name = name+"_625"
 	acquire_img(file_name)
 	GPIO.output(24,GPIO.LOW)
-	time.sleep(1)
+	time.sleep(0.5)
+	#time.sleep(0.5)
 
 	print("Turn on 730nm LED")
 	GPIO.output(25,GPIO.HIGH)
-	time.sleep(1)
+	time.sleep(0.5)
+	#time.sleep(0.5)
 
 	print("Acquiring 730nm Image")
 	file_name = name+"_730"
 	acquire_img(file_name)
 	GPIO.output(25,GPIO.LOW)
-	time.sleep(1)
+	time.sleep(0.5)
+	#time.sleep(0.5)
 
 	print("Turn on 808nm LED")
 	GPIO.output(5,GPIO.HIGH)
-	time.sleep(1)
+	time.sleep(0.5)
+	#time.sleep(0.5)
 
 	print("Acquiring 808nm Image")
 	file_name = name+"_808"
 	acquire_img(file_name)
 	GPIO.output(5,GPIO.LOW)
-	time.sleep(1)
+	time.sleep(0.5)
+	#time.sleep(0.5)
+
+	print("Turn on 940nm LED")
+	GPIO.output(6,GPIO.HIGH)
+	time.sleep(0.5)
+	#time.sleep(0.5)
+
+	print("Acquiring 940nm Image")
+	file_name = name+"_940"
+	acquire_img(file_name)
+	GPIO.output(6,GPIO.LOW)
+	time.sleep(0.5)
+	#time.sleep(0.5)
 
 	#crop_img(file_name)
 	#analyze_img("patientTest_410")
