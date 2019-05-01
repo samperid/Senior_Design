@@ -4,7 +4,7 @@ from pypylon import pylon
 import platform
 from acquire_img import acquire_img
 
-filenames = [test1,test2,test3]
+filenames = ["test1","test2","test3"]
 
 for name in filenames:
 	acquire_img(name)
