@@ -13,7 +13,7 @@ def image():
 	name = flask.request.form.get('name')
 	flask.session['name'] = name
 	test = "string"
-	#main(name)
+	main(name)
 	wavelengths = [410,490,565,625,730,808]
 	img_names = []
 	for i in range(0,6):
