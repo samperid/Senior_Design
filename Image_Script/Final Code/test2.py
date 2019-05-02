@@ -35,7 +35,6 @@ GPIO.output(4,GPIO.HIGH)
 time.sleep(1)
 
 print("Acquiring 410nm Image")
-file_name = name+"_410"
 GPIO.output(4,GPIO.LOW)
 # time.sleep(0.5)
 time.sleep(1)
@@ -46,7 +45,6 @@ GPIO.output(27,GPIO.HIGH)
 time.sleep(1)
 
 print("Acquiring 490nm Image")
-file_name = name+"_490"
 GPIO.output(27,GPIO.LOW)
 # time.sleep(0.5)
 time.sleep(1)
@@ -69,7 +67,6 @@ GPIO.output(24,GPIO.HIGH)
 time.sleep(1)
 
 print("Acquiring 625nm Image")
-file_name = name+"_625"
 GPIO.output(24,GPIO.LOW)
 # time.sleep(0.5)
 time.sleep(1)
@@ -80,7 +77,6 @@ GPIO.output(25,GPIO.HIGH)
 time.sleep(1)
 
 print("Acquiring 730nm Image")
-file_name = name+"_730"
 GPIO.output(25,GPIO.LOW)
 # time.sleep(0.5)
 time.sleep(1)
@@ -91,7 +87,6 @@ GPIO.output(5,GPIO.HIGH)
 time.sleep(1)
 
 print("Acquiring 808nm Image")
-file_name = name+"_808"
 GPIO.output(5,GPIO.LOW)
 # time.sleep(0.5)
 time.sleep(1)
