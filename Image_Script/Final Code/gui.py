@@ -15,9 +15,9 @@ def image():
 	test = "string"
 	name = str(name)
 	main(name)
-	wavelengths = [410,490,625,730,808]
+	wavelengths = [410,490,625,808]
 	img_names = []
-	for i in range(0,5):
+	for i in range(0,4):
 		wavelength = str(wavelengths[i])
 		img_names.append(name+"_"+wavelength)
 
@@ -28,7 +28,7 @@ def image():
 	img1 = path+img_names[1]+".png"
 	img2 = path+img_names[2]+".png"
 	img3 = path+img_names[3]+".png"
-	img4 = path+img_names[4]+".png"
+	#img4 = path+img_names[4]+".png"
 	# img5 = path+img_names[5]+".png"
 	# img6 = path+img_names[6]+".png"
 	# img0 = path+"mnpdouble_410_401.jpg"
