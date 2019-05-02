@@ -1,6 +1,7 @@
 from analyze_img import analyze_img
 from crop import crop_img
 from acquire_img import acquire_img
+from acquire_img import acquire_img2
 import RPi.GPIO as GPIO
 import time
 
