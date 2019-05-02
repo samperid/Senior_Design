@@ -43,7 +43,7 @@ def main(name):
 
 	print("Acquiring 410nm Image")
 	file_name = name+"_410"
-	acquire_img(file_name)
+	acquire_img2(file_name)
 	GPIO.output(4,GPIO.LOW)
 	# time.sleep(0.5)
 	time.sleep(1)
@@ -55,7 +55,7 @@ def main(name):
 
 	print("Acquiring 490nm Image")
 	file_name = name+"_490"
-	acquire_img(file_name)
+	acquire_img2(file_name)
 	GPIO.output(27,GPIO.LOW)
 	# time.sleep(0.5)
 	time.sleep(1)
